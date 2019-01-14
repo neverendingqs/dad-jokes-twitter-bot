@@ -1,7 +1,7 @@
 {
-  "name": "dad-jokes-twitter-bot",
+  "name": "serverless-gcp-example",
   "version": "0.1.0",
-  "description": "Twitter bot that makes dad jokes.",
+  "description": "Serverless example using Google Cloud Platform.",
   "main": "index.js",
   "scripts": {
     "sls": "sls",

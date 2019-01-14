@@ -1,11 +1,11 @@
-service: dad-jokes-twitter-bot
+service: serverless-gcp-example
 
 provider:
   name: google
   runtime: nodejs
-  project: dad-jokes-twitter-bot
+  project: serverless-gcp-example
   # the path to the credentials file needs to be absolute
-  credentials: ~/.gcloud/dad-jokes-twitter-bot-keyfile.json
+  credentials: ~/.gcloud/serverless-gcp-example-keyfile.json
 
 plugins:
   - serverless-google-cloudfunctions
@@ -16,7 +16,7 @@ package:
     - .git/**
 
 functions:
-  jokes:
+  default:
     handler: http
     events:
       - http: path
